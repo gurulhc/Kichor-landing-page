@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
-import Amiral from '@/public/assets/amiral.png'
 import Product from './product'
 
 
@@ -34,13 +33,13 @@ const WaitList = () => {
   }, [index]);
 
   return (
-    <div className='lg:w-[85%] lg:flex grid items-center lg:justify-between mx-auto gap-10 justify-center pt-[80px] mb-10'>
+    <div className='w-[85%] lg:flex grid items-center lg:justify-between mx-auto gap-10 justify-center  py-10'>
       <div className='lg:w-[40%] '>
-        <h2 className='font-bold text-[#E60A2B] text-[78px]'>
+        <h2 className='font-bold text-[#E60A2B] md:text-[78px] text-[46px]'>
           Kichor App
-          <span className='flex text-[#300000] items-center gap-3 mt-[-20px]'>
+          <span className='flex text-[#300000] items-center gap-3 md:mt-[-20px]'>
             is coming 
-            <Image src='https://s.w.org/images/core/emoji/15.0.3/svg/1f60b.svg' alt='emoji' width={70} height={70} />
+            <Image src='https://s.w.org/images/core/emoji/15.0.3/svg/1f60b.svg' alt='emoji' width={50} height={50} />
           </span>
         </h2>
         <p>
@@ -50,13 +49,13 @@ const WaitList = () => {
           Join waitlist
         </button>
       </div>
-      <div className='lg:w-[45%] overflow-hidden'>
-        <div className='w-[1500px] flex items-center justify-center gap-[120px]' style={{ transform: `translate3d(${-index * 34}%, 0, 0)` }}>
+      <div className='lg:w-[45%]   overflow-hidden'>
+        <div className='w-[1500px] flex items-center justify-center md:gap-[140px] gap-[30px]' style={{ transform: `translate3d(${-index * 34}%, 0, 0)` }}>
         {
           product.map((item, index)=>(
             <>
-              <div key={index} className='flex items-center justify-center w-[400px] h-[400px]' >
-                <Image src={require('@/public/assets/' + item.food)} alt='emoji' width={250} height={250} className='w-full h-full'/>
+              <div key={index} className='flex items-center justify-center  w-full h-[450px] ' >
+                <Image src={require('@/public/assets/' + item.food)} alt='emoji' width={350} height={350} className='ml-[-30%] md:ml-0  w-[65%]  md:w-[100%] md:h-[80%] lg:h-[90%]'/>
               </div>
             </>
           ))
