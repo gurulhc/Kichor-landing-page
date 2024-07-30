@@ -55,7 +55,7 @@ const WaitList = () => {
           product.map((item, index)=>(
             <>
               <div key={index} className='flex items-center justify-center  w-full h-[450px] lg:ml-10' >
-                <Image src={require('@/public/assets/' + item.food)} alt='emoji' width={350} height={350} className='ml-[-30%] md:ml-0  w-[65%]  md:w-[100%] md:h-[80%] lg:h-[90%]'/>
+                <Image src={require('@/public/assets/' + item.food)} alt='emoji' width={350} height={350} className='ml-[-30%] md:ml-0  w-[65%]  md:w-[100%] md:h-[80%] ]'/>
               </div>
             </>
           ))
