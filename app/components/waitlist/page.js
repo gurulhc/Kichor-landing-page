@@ -33,7 +33,7 @@ const WaitList = () => {
   }, [index]);
 
   return (
-    <div className='w-[85%] lg:flex grid items-center lg:justify-between mx-auto gap-10 justify-center  py-10'>
+    <div className='w-[85%] lg:flex grid items-center lg:justify-between mx-auto gap-10 justify-center  py-[4rem]'>
       <div className='lg:w-[40%] '>
         <h2 className='font-bold text-[#E60A2B] md:text-[78px] text-[46px]'>
           Kichor App
@@ -54,7 +54,7 @@ const WaitList = () => {
         {
           product.map((item, index)=>(
             <>
-              <div key={index} className='flex items-center justify-center  w-full h-[450px] ' >
+              <div key={index} className='flex items-center justify-center  w-full h-[450px] lg:ml-10' >
                 <Image src={require('@/public/assets/' + item.food)} alt='emoji' width={350} height={350} className='ml-[-30%] md:ml-0  w-[65%]  md:w-[100%] md:h-[80%] lg:h-[90%]'/>
               </div>
             </>
